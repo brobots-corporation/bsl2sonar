@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         go-version: [1.16.x]
-        platform: [ ubuntu-latest, macos-latest, windows-latest ]
+        platform: [ ubuntu-latest, macos-latest, windows-2016 ]
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Install Go
@@ -54,7 +54,7 @@ jobs:
     strategy:
       matrix:
         # build and publish in parallel: linux/amd64, windows/amd64, darwin/amd64
-        goos: [linux, windows, darwin]
+        goos: [linux, windows-2016, darwin]
         goarch: [amd64]
 
     steps:
