@@ -28,24 +28,24 @@ var CountGetObjectsNamesFromSubsystem = 2
 var CountGetListMetadataName = 24
 var CountGetListBslFiles = 3
 var CountGetBslFilesPaths = 63
-var subsystemFilePath,_ = filepath.Abs(path.Join(AbsPathTestSrcFolder, "Subsystems/рн_Супер.xml"))
-var ObjectFolderPath,_ = filepath.Abs(path.Join(AbsPathTestSrcFolder, "Catalogs/Справочник8"))
+var subsystemFilePath, _ = filepath.Abs(path.Join(AbsPathTestSrcFolder, "Subsystems/рн_Супер.xml"))
+var ObjectFolderPath, _ = filepath.Abs(path.Join(AbsPathTestSrcFolder, "Catalogs/Справочник8"))
 var pattern = "*.bsl"
 var CountLineBslFiles = 3873
 var CountLineBslFilesUnicode = 6833
 
 type FinderTestSuite struct {
 	suite.Suite
-	BaseFinder       *Finder
-	BaseFinderStdOut *Finder
-	BaseFinderUnicodeStdOut *Finder
-	BaseFinderFileOut *Finder
+	BaseFinder               *Finder
+	BaseFinderStdOut         *Finder
+	BaseFinderUnicodeStdOut  *Finder
+	BaseFinderFileOut        *Finder
 	BaseFinderUnicodeFileOut *Finder
 	//BaseFinderStdOutVerbose *Finder
-	fsppContent string // fixture-sonar-project.properties
+	fsppContent  string // fixture-sonar-project.properties
 	fusppContent string // fixture-unicode-sonar-project.properties
-	fsContent string // fixture-stdout
-	fusContent string // fixture-unicode-stdout
+	fsContent    string // fixture-stdout
+	fusContent   string // fixture-unicode-stdout
 }
 
 func copy(scr string, dst string) {
@@ -146,7 +146,7 @@ func (suite *FinderTestSuite) TestGetSubsystemsFilesPaths() {
 	suite.Equal(countSubsystemsFilesPaths, len(subsystemsFilesPaths))
 }
 
-func (suite *FinderTestSuite) TestGetObjectsNamesFromSubsystem()  {
+func (suite *FinderTestSuite) TestGetObjectsNamesFromSubsystem() {
 	metadataNames := suite.BaseFinder.getObjectsNamesFromSubsystem(subsystemFilePath)
 	suite.Equal(CountGetObjectsNamesFromSubsystem, len(metadataNames))
 }

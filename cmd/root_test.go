@@ -14,9 +14,9 @@ var AbsPathTestNoExistFile, _ = filepath.Abs("../tests/fixture_stdou")
 var AbsPathTemplateSonarFile, _ = filepath.Abs("../tests/template-sonar-project.properties")
 
 func TestArgsCount(t *testing.T) {
-	testTable := []struct{
-		stringArgs     	[]string
-		expectedString 	string
+	testTable := []struct {
+		stringArgs     []string
+		expectedString string
 	}{
 		{
 			[]string{AbsPathTestSrcFolder},
@@ -36,8 +36,8 @@ func TestArgsCount(t *testing.T) {
 	}
 }
 
-func TestPhraseLen(t *testing.T)  {
-	testTable := []struct{
+func TestPhraseLen(t *testing.T) {
+	testTable := []struct {
 		stringArgs     []string
 		expectedString string
 	}{
@@ -64,11 +64,11 @@ func TestPhraseLen(t *testing.T)  {
 }
 
 func TestIsArgsValid(t *testing.T) {
-	testTable := []struct{
-		stringArgs     	[]string
-		fileFlag		string
-		genFlag		bool
-		expectedString 	string
+	testTable := []struct {
+		stringArgs     []string
+		fileFlag       string
+		genFlag        bool
+		expectedString string
 	}{
 		{
 			[]string{AbsPathTestFailFolder, "рн_"},

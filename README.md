@@ -1,5 +1,7 @@
 # Поисковик bsl модулей для sonar-scanner sonarqube
 
+[![](https://img.shields.io/badge/license-GPL3-yellow.svg)](https://github.com/brobots-corporation/bsl2sonar/blob/main/LICENSE)
+
 Поиск bsl файлов проекта (конфигурации 1С) по вхождению в подсистемы.
 
 ## Возможности

@@ -2,6 +2,7 @@
 *launch.json
 .vscode
 .idea
+build
 
 # Игнорировать файлы Mac OS X
 .DS_Store
