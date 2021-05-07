@@ -48,7 +48,7 @@ jobs:
             ${{ runner.os }}-go-
 
   build:
-    needs: Unittest
+    needs: test
     name: Release Go Binary
     runs-on: ubuntu-latest
     strategy:
