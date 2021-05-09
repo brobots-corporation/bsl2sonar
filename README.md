@@ -1,8 +1,9 @@
 # Поисковик bsl модулей для sonar-scanner sonarqube
 
-[![release](https://github.com/brobots-corporation/bsl2sonar/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/brobots-corporation/bsl2sonar/actions/workflows/release.yml)
+[![Release](https://img.shields.io/github/v/release/brobots-corporation/bsl2sonar.svg)](https://github.com/brobots-corporation/bsl2sonar/releases/latest)
 [![lint and test](https://github.com/brobots-corporation/bsl2sonar/actions/workflows/lint-test.yml/badge.svg?branch=main)](https://github.com/brobots-corporation/bsl2sonar/actions/workflows/lint-test.yml)
 [![codecov](https://codecov.io/gh/brobots-corporation/bsl2sonar/branch/main/graph/badge.svg?token=IZ00OLNPNN)](https://codecov.io/gh/brobots-corporation/bsl2sonar)
+[![Go Report Card](https://goreportcard.com/badge/github.com/brobots-corporation/bsl2sonar)](https://goreportcard.com/report/github.com/brobots-corporation/bsl2sonar)
 [![](https://img.shields.io/badge/license-GPL3-yellow.svg)](https://github.com/brobots-corporation/bsl2sonar/blob/main/LICENSE)
 
 Поиск bsl файлов проекта (конфигурации 1С) по вхождению в подсистемы.
